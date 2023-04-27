@@ -19,6 +19,6 @@ jobs:
       uses: MTESSDev/github-action-mtess-frw-deploiement@main
       with:
         url: 'https://formulaires.it.mtess.gouv.qc.ca/api/v1/SIS/DeployerSysteme'
-        method: 'POST'
+        repertoire: '${{ github.workspace }}'
         customHeaders: '{"Content-Type": "application/json", "X-ApiKey": "${{ secrets.APIKEY }}", "X-NoPublicSystemeAutorise": "${{ secrets.NOPUBLICSYSTEMEAUTORISE }}"}'
         data: '{"zip": "${{ steps.base64Zip.outputs.base64 }}"}'
