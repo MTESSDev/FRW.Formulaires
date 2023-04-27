@@ -1,25 +1,34 @@
+# Action exécutée sur les pull_request et les push branches main et releases
 on:
   pull_request:
   push:
     branches:
       - main
       - 'releases/*'
+
+# Travaux
 jobs:
   deployment:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - name: Archive Release
+
+    - name: Extraire le dépôt
+      uses: actions/checkout@master
+
+    - name: Zipper le réperoir
       uses: thedoctor0/zip-release@0.7.1
       with:
         type: 'zip'
         filename: 'release.zip'
         exclusions: '*.git* .github'
-    - uses: frostebite/File-To-Base64@master
+
+    - name: Convertir en base64 le .zip nouvellement créé
+      uses: frostebite/File-To-Base64@master
       id: base64Zip
       with:
         filePath: release.zip
-    - name: Deploy Stage
+        
+    - name: Upload dans FRW
       uses: fjogeleit/http-request-action@v1
       with:
         url: 'https://formulaires.it.mtess.gouv.qc.ca/api/v1/SIS/DeployerSysteme'
