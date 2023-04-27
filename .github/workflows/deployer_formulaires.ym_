@@ -15,8 +15,21 @@ jobs:
     - name: Extraire le dépôt
       uses: actions/checkout@master
 
+    - name: Zipper le répertoire
+      uses: thedoctor0/zip-release@0.7.1
+      with:
+        type: 'zip'
+        filename: 'release.zip'
+        exclusions: '*.git* .github README.md'
+
+    - name: Convertir en base64 le .zip nouvellement créé
+      uses: frostebite/File-To-Base64@master
+      id: base64Zip
+      with:
+        filePath: release.zip
+        
     - name: Upload dans FRW
-      uses: MTESSDev/github-action-mtess-frw-deploiement@main
+      uses: fjogeleit/http-request-action@v1
       with:
         url: 'https://formulaires.it.mtess.gouv.qc.ca/api/v1/SIS/DeployerSysteme'
         method: 'POST'
