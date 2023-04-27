@@ -8,10 +8,21 @@ jobs:
   deployment:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@master
+    - name: Archive Release
+      uses: thedoctor0/zip-release@0.7.1
+      with:
+        type: 'zip'
+        filename: 'release.zip'
+        exclusions: '*.git* .github'
+    - uses: frostebite/File-To-Base64@master
+      id: base64Zip
+      with:
+        filePath: release.zip
     - name: Deploy Stage
       uses: fjogeleit/http-request-action@v1
       with:
         url: 'https://formulaires.it.mtess.gouv.qc.ca/api/v1/SIS/DeployerSysteme'
         method: 'POST'
         customHeaders: '{"Content-Type": "application/json", "X-ApiKey": "JFEsvQ6ALUzLbhsVaJUM9MtMbLnLUpcfYd7NS5GLYXDuRWpFZNw5rKt45J3L", "X-NoPublicSystemeAutorise": "B4CF56AE-8F79-413C-939C-71F1DA4BC807"}'
-        data: '{"zip": ""}'
+        data: '{"zip": "${{ steps.base64Zip.outputs.base64 }}"}'
