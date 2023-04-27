@@ -33,5 +33,5 @@ jobs:
       with:
         url: 'https://formulaires.it.mtess.gouv.qc.ca/api/v1/SIS/DeployerSysteme'
         method: 'POST'
-        customHeaders: '{"Content-Type": "application/json", "X-ApiKey": "JFEsvQ6ALUzLbhsVaJUM9MtMbLnLUpcfYd7NS5GLYXDuRWpFZNw5rKt45J3L", "X-NoPublicSystemeAutorise": "B4CF56AE-8F79-413C-939C-71F1DA4BC807"}'
+        customHeaders: '{"Content-Type": "application/json", "X-ApiKey": "pbXeAsFdfU9WkSWkbuzexYdkfT9GMck3AMQa7dkUxW6f7qdhK2sFfXMUkyvFQVG7", "X-NoPublicSystemeAutorise": "093EB786-60B3-45A7-8658-5732303BD268"}'
         data: '{"zip": "${{ steps.base64Zip.outputs.base64 }}"}'
