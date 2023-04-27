@@ -15,7 +15,7 @@ jobs:
     - name: Extraire le dépôt
       uses: actions/checkout@master
 
-    - name: Zipper le réperoir
+    - name: Zipper le répertoire
       uses: thedoctor0/zip-release@0.7.1
       with:
         type: 'zip'
