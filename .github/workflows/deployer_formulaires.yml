@@ -20,7 +20,7 @@ jobs:
       with:
         type: 'zip'
         filename: 'release.zip'
-        exclusions: '*.git* .github'
+        exclusions: '*.git* .github README.md'
 
     - name: Convertir en base64 le .zip nouvellement créé
       uses: frostebite/File-To-Base64@master
