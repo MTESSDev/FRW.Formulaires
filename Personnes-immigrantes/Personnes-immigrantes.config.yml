@@ -1,0 +1,1087 @@
+id: Personnes-immigrantes
+equipe: CCW
+infosSortie: >
+
+# ECS25A - Retour de FRW
+chargerFichiersBruts:
+    - nomEntrant: Personnes-immigrantes.pdf
+      ajouterPJ: true
+      nomPieceJointe: 
+        fr: Personnes-immigrantes-{{ide}}.pdf
+        en: Personnes-immigrantes-{{ide}}.pdf
+
+# Pièces jointes dans le formulaire
+chargerFichiersFRW:
+  actif: true
+  ajouterPJ: true        
+
+calcules:
+  courriel: '{{form_courrielContactEntreprise}}'
+
+calculesFinaux:
+    # Attention, ce préfix ne doit pas être plus long que 15 caractères.
+    prefixeEA: FRW-CCW-IMMI
+    #suffixeEA: '{{regionAdmin}}'
+
+envoyerMultipleBoiteGenerique:
+  ## Référencement vers MIFI  (Conseiller MESS)
+    - arretSurCorrespondance: false
+      actif: true
+      envoyerBoiteGenerique:
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix1"  
+
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix2"
+
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix3"
+
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix4"
+
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix5"
+
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix6"
+
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix7"
+
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix8"
+
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix9"
+
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix10"
+
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix11"
+
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix12"
+
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix013"
+
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix14"   
+              
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix15"  
+              
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix16"  
+              
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix17"  
+              
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix18"  
+              
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix19"  
+              
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix20"  
+              
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix21"  
+              
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix22"  
+              
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix23"  
+              
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix24"  
+              
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix26"  
+              
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix27"  
+              
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix28"  
+              
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix29"  
+              
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix30"  
+              
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix31"         
+              
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix32"  
+              
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix33"  
+              
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix34"  
+              
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix35"  
+              
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix37"  
+              
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix38"  
+              
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix40"  
+              
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix41"  
+              
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix42"  
+              
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix43"  
+              
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix44"  
+              
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix45"  
+              
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix46"  
+                            
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix47"  
+                            
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix49"  
+                            
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix50"  
+                            
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix52"  
+                            
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix53"  
+                            
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix54"  
+                            
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix57"  
+                            
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix58"  
+                            
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix59"  
+                            
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix60"  
+                            
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix61"  
+                            
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix62"  
+                            
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix63"  
+                            
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix64"  
+                            
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix65"  
+                            
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix66"  
+                            
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix67"  
+                            
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix0671"  
+                            
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix0672"  
+                            
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix0673"  
+                            
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix69"  
+                            
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix71"  
+                            
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix72"  
+                            
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix74"  
+                            
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix075"  
+                            
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix76"  
+                            
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix77"  
+                            
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix79"  
+                            
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix83"  
+                            
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix86"  
+                                          
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix87"  
+                                          
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix89"  
+                                          
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix90"  
+                                          
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix91"  
+                                          
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix92"  
+                                          
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix94"  
+                                          
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix95"  
+                                          
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix96"  
+                                          
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix097"  
+                                          
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix98"  
+                                          
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix99"  
+                                          
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix100"  
+                                          
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix101"  
+                                          
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix102"  
+                                          
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix104"  
+                                          
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix105"  
+                                          
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix106"  
+                                          
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix107"  
+                                          
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix109"  
+                                          
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix113"  
+                                          
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix114"  
+                                          
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix116"  
+                                          
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix117"  
+                                          
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix118"  
+                                          
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix120"  
+                                          
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix121"  
+                                          
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix122"  
+                                          
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix124"  
+                                          
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix125"  
+                                          
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix127"  
+                                                        
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix128" 
+                                                        
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix129" 
+                                                        
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix130" 
+                                                        
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix132" 
+                                                        
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix134" 
+                                                        
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix135" 
+                                                        
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix136" 
+                                                        
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix137" 
+                                                        
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix138" 
+                                                        
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix139" 
+                                                        
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix140" 
+                                                        
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix145" 
+                                                        
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix147" 
+                                                        
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix148" 
+                                                        
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix250" 
+                                          
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix252" 
+                                          
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix256" 
+                                                        
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix258" 
+                                                        
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix259" 
+                                                        
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix262" 
+                                                        
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix266" 
+                                                        
+        - idCourriel: traitement-Ministere
+          overrideAdresseA:
+            production: audrey.gagnon1@servicesquebec.gouv.qc.ca
+          conditions:
+            - champCalcule: "{{form_nombsq}}"
+              condition: "==" 
+              valeur: "choix277" 
+
+envoyerConfirmationClient:
+    champsFormulaire:
+        - form_courrielAgent
+    idCourriel: confirmationSoumissionClient
+
+courriels:
+  - id: traitement-Ministere
+    filtres:
+      - typeFiltre: moduleSource
+        valeurs: 
+        - chargerFichiersBruts
+        - chargerFichiersFRW
+    a:
+      techno: ssccwsupport@mtess.gouv.qc.ca
+      production: "{{{envoyerBoiteGenerique_overrideAdresseA}}}"
+    nomExpediteur: MIFI Immigration
+    de:
+      techno: nepasrepondre@mtess.gouv.qc.ca
+      production: nepasrepondre@mtess.gouv.qc.ca
+    objet:  
+      fr: Demande de prise en charge d’une personne immigrante {{{envoyerBoiteGenerique_suffixeObjet}}} {{ide}} – {{FormatterDate X-DateTransmission "yyyy-MM-dd"}}
+      en: Application for taking charge of an immigrant {{{envoyerBoiteGenerique_suffixeObjet}}} {{ide}} – {{FormatterDate X-DateTransmission "yyyy-MM-dd"}}
+    corps:
+      fr : |
+        <img src="https://www.mtess.gouv.qc.ca/images/piv/MESS_w3_couleur.png" width="210" height="81" alt="Gouvernement du Québec" border="0" />
+        <p>Bonjour,</p><p>Courriel envoyé au ministère FRANCAIS ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ</p>
+      en : |
+        <img src="https://www.mtess.gouv.qc.ca/images/piv/MESS_w3_couleur.png" width="210" height="81" alt="Gouvernement du Québec" border="0" />
+        <p>Hi,</p><p>Courriel envoyé au ministère ANGLAIS ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ</p>
+    evenementAffaire: 
+        fr: '{{prefixeEA}}-MIN{{suffixeEA}}'
+        en: '{{prefixeEA}}-MIN{{suffixeEA}}'
+  - id: confirmationSoumissionClient
+    filtres:
+      - typeFiltre: moduleSource
+        valeurs: 
+        - chargerFichiersBruts
+        - chargerFichiersFRW
+    a:
+      tous: "{{courrielClient}}"
+    nomExpediteur: MIFI Immigration
+    de:
+      techno: nepasrepondre@mtess.gouv.qc.ca
+      production: nepasrepondre@mtess.gouv.qc.ca
+    objet: 
+        fr: Réception de votre formulaire de demande de prise en charge d’une personne immigrante
+        en: Receipt of your immigrant care application form
+    corps:
+      fr : |
+        <img src="https://www.mtess.gouv.qc.ca/images/piv/MESS_w3_couleur.png" width="210" height="81" alt="Gouvernement du Québec" border="0" />
+        <p>Bonjour,</p><p>Courriel envoyé à l'agent FRANCAIS ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ</p>
+      en : |
+        <img src="https://www.mtess.gouv.qc.ca/images/piv/MESS_w3_couleur.png" width="210" height="81" alt="Gouvernement du Québec" border="0" />
+        <p>Hi,</p><p>Courriel envoyé à l'agent ANGLAIS ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ</p>
+    evenementAffaire: 
+        fr: '{{prefixeEA}}-CLI{{suffixeEA}}'
+        en: '{{prefixeEA}}-CLI{{suffixeEA}}'

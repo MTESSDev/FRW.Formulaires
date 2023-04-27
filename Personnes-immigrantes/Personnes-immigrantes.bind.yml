@@ -1,0 +1,29 @@
+bundles:
+  - nomSortie: Personnes-immigrantes.pdf
+    templates:
+      - template1
+#Une estampille est possible pour les PDF seulement
+    estampille:
+      positionX: 400
+      positionY: 710
+      tailleFont: 9
+      lignes:
+        - 'Numéro de référence : {{NoConfirmation}}'
+        - 'Date de transmission : {{FormatterDate DateTransmission "yyyy-MM-dd HH:mm:ss"}}'
+
+templates:
+- id: template1
+  name: Fichier gabarit
+  gabarit: 
+    fr: Personnes-immigrantes.gabarit.FR.docx
+    en: Personnes-immigrantes.gabarit.EN.docx
+  #gabarit: 
+  #  fr: Referencement-Entreprises.FR.docx
+  #ignorer: 
+  #  - champ: validationReferencement
+  # Mettre un répertoire gabarit dans le répertoire du formulaire et y déposer le fichier
+  #gabarit: 
+  #  fr: MIFI.FR.docx
+  #  en: MIFI.EN.docx
+
+

@@ -1,0 +1,13 @@
+etapes:
+- tache: genererWord
+  options:
+    fichierBind: Personnes-immigrantes.bind.yml
+- tache: ajouterEstampille
+- tache: traiterDocumentsSoumis
+- tache: appelerServiceExterne
+  options:
+    client: appel_externe
+    modeBoutonTesterTransmission: simuler
+    fichiersExternes:
+      - nom: ECS25A
+        fichier: Personnes-immigrantes.config.yml
