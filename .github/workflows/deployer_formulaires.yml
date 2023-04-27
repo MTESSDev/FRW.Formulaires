@@ -21,4 +21,3 @@ jobs:
         url: 'https://formulaires.it.mtess.gouv.qc.ca/api/v1/SIS/DeployerSysteme'
         repertoire: '${{ github.workspace }}'
         customHeaders: '{"Content-Type": "application/json", "X-ApiKey": "${{ secrets.APIKEY }}", "X-NoPublicSystemeAutorise": "${{ secrets.NOPUBLICSYSTEMEAUTORISE }}"}'
-        data: '{"zip": "${{ steps.base64Zip.outputs.base64 }}"}'
