@@ -22,3 +22,4 @@ jobs:
         repertoire: '${{ github.workspace }}'
         noPublicSystemeAutorise: ${{ secrets.NOPUBLICSYSTEMEAUTORISE }}
         apiKey: ${{ secrets.APIKEY }}
+        
