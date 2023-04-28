@@ -18,7 +18,6 @@ jobs:
     - name: Upload dans FRW
       uses: MTESSDev/github-action-mtess-frw-deploiement@main
       with:
-        url: 'https://formulaires.it.mtess.gouv.qc.ca/api/v1/SIS/DeployerSysteme'
-        
+        environnement: QA
         repertoire: '${{ github.workspace }}'
-        customHeaders: '{"Content-Type": "application/json", "X-ApiKey": "${{ secrets.APIKEY }}", "X-NoPublicSystemeAutorise": "${{ secrets.NOPUBLICSYSTEMEAUTORISE }}"}'
+        noPublicSystemeAutorise: ${{ secrets.NOPUBLICSYSTEMEAUTORISE }}
