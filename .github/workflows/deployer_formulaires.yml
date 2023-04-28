@@ -21,3 +21,4 @@ jobs:
         environnement: QA
         repertoire: '${{ github.workspace }}'
         noPublicSystemeAutorise: ${{ secrets.NOPUBLICSYSTEMEAUTORISE }}
+        apiKey: ${{ secrets.APIKEY }}
